@@ -7,7 +7,7 @@
 body {
     display: flex;
     max-width: 100vw;
-    min-height: 100vh;
+   /* min-height: 100vh;*/
 }
 /*estilo del contenedor principal*/
 /* margin: 0px auto; centra la page*/
@@ -15,37 +15,71 @@ body {
     width: 100%;
     padding: 0;
     margin: 0px auto;
-    font-family: cursive; /*toda la letra del contenedro en cursiva*/
+    font-family: cursive; /*toda la letra del contenedor en cursiva*/
    /* background-color: antiquewhite;*/
-    
 }
-/*************************/
-/*  listas ***************/
-/*************************/
+/******************************************/
+/***********  listas - RULES***************/
+/******************************************/
+@font-face {
+    font-family: Roboto;
+    src: url(/font/Roboto-Medium.ttf);/*cargo una fuente parecida el texto*/
+}
 .rules {
+    font-family: Roboto; 
     width: 100%;
-    padding: 5%;
+    padding: 10%;
 }
 .presentacionreglas {
-    height: 10%;
-    text-align: center;
+    /*height: 10%;*/
+    text-align: center; /*alinio reglas al centro*/
 }
-.sportsmanship{
-    height: 15%;
+.titulito {
+    font-weight: bold;
+    margin-bottom: 2%;
 }
+/*sangria de el texto*/
+.sangria {
+    text-indent: 2em;
+}
+/*lista con numero y los coloca dentro deltecto(outside por defecto)*/
 .listanumerada {
-    list-style: decimal inside;
-    height: 50%;
+    list-style: decimal inside;   
 }
-.allplay {
-    height: 20%;
+/* paddin para los elementos de la lista*/
+ol li {
+    padding-bottom: 2%;
+}
+/*uso la cascada para sacar el padding ya que esta lista no lleva*/
+ul  li {
+    padding-bottom: 0;
 }
 .listaalfa {
     list-style: lower-latin inside;
 }
-/*************************/
-/*  tablas ***************/
-/*************************/
+/*le coloco a esta lista el circulo vacio*/
+.listacirculito {
+    list-style: circle inside;
+    padding-left: 10%;
+}
+.presentacionreglas {
+   /* border: 1px solid black;*/
+    margin-bottom: 5%;
+}
+/*.sportsmanship {
+    border: 1px solid black;
+}*/
+.listanumerada {
+    margin-top: 2.5%;
+   /* border: 1px solid black;*/
+}
+.allplay {
+    margin-top: 2.5%;
+    /*border: 1px solid black;*/
+}
+/****************************************/
+/*********  tablas - GAMESinformation****/
+/****************************************/
 .tablainformacion {
     width: 80%;
     margin: 5%;
@@ -93,9 +127,9 @@ body {
 .email {
     text-align: right;
 }
-/*********************/
-/*********************/
-/*********************/
+/***********************************/
+/***********************************/
+/***********************************/
     /*estilo del encabezado*/
     /* en este caso dentro del contenedor van
     dos cajas 
@@ -106,7 +140,7 @@ body {
     /* background-color: pink; */
         margin: 0px auto;
         width: 99%;
-        height: 20%;
+       /* height: 20%;/*
        /* position: sticky; deja posicionado el header en la cabexera de la paguina*/
         top: 10px;
     }
